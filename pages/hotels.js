@@ -35,6 +35,9 @@ const HOTELS = [
     risks: ["Может быть мало вариантов", "Цены растут быстрее всего"],
   },
 ];
+
+export default function Hotels() {
+  return (
     <>
       <Head>
         <title>Tomorrowland Thailand • Отели</title>
@@ -53,7 +56,9 @@ const HOTELS = [
         </div>
 
         <main className="relative mx-auto max-w-6xl px-6 pb-28 pt-10 md:pt-16">
-          <div className="text-sm text-white/70">Tomorrowland Thailand • Отели</div>
+          <div className="text-sm text-white/70">
+            Tomorrowland Thailand • Отели
+          </div>
 
           <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-6xl">
             Выбери формат жилья —{" "}
@@ -63,8 +68,8 @@ const HOTELS = [
           </h1>
 
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/75 md:text-lg">
-            Сейчас это витрина категорий (MVP). Ты выбираешь подход → я уточняю наличие,
-            цену и лучший способ добраться ночью после закрытия.
+            Сейчас это витрина категорий (MVP). Ты выбираешь подход → я уточняю
+            наличие, цену и лучший способ добраться ночью после закрытия.
           </p>
 
           <section className="mt-10 grid gap-4 md:mt-14 md:grid-cols-3">
@@ -76,14 +81,18 @@ const HOTELS = [
                 <div className="text-xs text-white/60">{h.tag}</div>
                 <div className="mt-2 text-lg font-semibold">{h.name}</div>
 
-                <div className="mt-4 text-sm font-semibold text-white/80">Подходит если:</div>
+                <div className="mt-4 text-sm font-semibold text-white/80">
+                  Подходит если:
+                </div>
                 <ul className="mt-2 space-y-2 text-sm text-white/70">
                   {h.bullets.map((b) => (
                     <li key={b}>• {b}</li>
                   ))}
                 </ul>
 
-                <div className="mt-4 text-sm font-semibold text-white/80">Риски:</div>
+                <div className="mt-4 text-sm font-semibold text-white/80">
+                  Риски:
+                </div>
                 <ul className="mt-2 space-y-2 text-sm text-white/70">
                   {h.risks.map((r) => (
                     <li key={r}>— {r}</li>
@@ -92,7 +101,7 @@ const HOTELS = [
 
                 <a
                   href={`${TELEGRAM_LINK}?text=${encodeURIComponent(
-                    `Хочу отели: ${h.name}. Бюджет/даты: _____. Кол-во людей: ____.`
+                    `Хочу отели: ${h.name}. Бюджет/даты: _____. Кол-во людей: _____.`
                   )}`}
                   target="_blank"
                   rel="noreferrer"
@@ -104,7 +113,6 @@ const HOTELS = [
             ))}
           </section>
 
-          {/* Sticky CTA */}
           <div className="fixed inset-x-0 bottom-0 z-50">
             <div className="mx-auto max-w-6xl px-6 pb-6">
               <div className="flex items-center justify-between gap-3 rounded-2xl bg-black/60 px-4 py-3 ring-1 ring-white/10 backdrop-blur">
@@ -129,4 +137,3 @@ const HOTELS = [
     </>
   );
 }
-export default function Hotels() { return <div>Hotels page</div> }
