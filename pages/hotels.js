@@ -35,9 +35,6 @@ const HOTELS = [
     risks: ["Может быть мало вариантов", "Цены растут быстрее всего"],
   },
 ];
-
-export default function Hotels() {
-  return (
     <>
       <Head>
         <title>Tomorrowland Thailand • Отели</title>
