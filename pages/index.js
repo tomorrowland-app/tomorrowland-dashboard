@@ -200,7 +200,9 @@ export default function Home() {
         href="#stay-format"
         className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-black/30 px-7 py-4 text-base font-semibold text-white backdrop-blur hover:bg-black/40"
       >
-        Как уехать ночью
+<a href="#night-transfer" className="...">
+  Как уехать ночью
+</a>
       </a>
     </div>
 
@@ -235,7 +237,7 @@ export default function Home() {
 <section className="mt-12 rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
   <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
     <div className="max-w-xl">
-      <div className="text-lg font-semibold tracking-tight">
+    <div id="night-transfer" className="...">
         Форматы размещения по удалённости
       </div>
 

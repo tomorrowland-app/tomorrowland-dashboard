@@ -93,4 +93,3 @@ export default function About() {
     </div>
   );
 }
-export default function About() { return <div>About page</div> }

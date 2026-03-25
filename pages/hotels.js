@@ -132,4 +132,3 @@ export default function Hotels() {
     </>
   );
 }
-export default function Hotels() { return <div>Hotels page</div> }
