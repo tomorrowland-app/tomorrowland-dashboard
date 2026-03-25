@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 
-const LeafletMap = dynamic(() => import("../components/LeafletMapClient"), {
+const LeafletMap = dynamic(() => import("../components/LeafletMap"), {
   ssr: false,
 });
 const TELEGRAM_USERNAME = "Pavel777_1";
